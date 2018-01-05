@@ -15,4 +15,12 @@ module.exports = {
   resolve: {
     alias: rxPaths(),
   },
+  module: {
+    rules: [
+      {
+        test: path.resolve(__dirname, "node_modules/rxjs"),
+        sideEffects: false
+      },
+    ]
+  },
 };

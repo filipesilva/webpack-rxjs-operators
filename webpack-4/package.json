@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run patch-rxjs && npm run webpack && npm run source-map-explorer",
-    "patch-rxjs": "node patch-module-side-effects.js",
+    "start": "npm run webpack && npm run source-map-explorer",
     "webpack": "webpack",
     "source-map-explorer": "source-map-explorer ./dist/main.js"
   },
