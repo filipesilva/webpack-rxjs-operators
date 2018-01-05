@@ -1,0 +1,21 @@
+{
+  "name": "webpack-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run patch-rxjs && npm run webpack && npm run source-map-explorer",
+    "patch-rxjs": "node patch-module-side-effects.js",
+    "webpack": "webpack",
+    "source-map-explorer": "source-map-explorer ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "5.5.6",
+    "source-map-explorer": "1.5.0",
+    "webpack": "4.0.0-alpha.3",
+    "webpack-cli": "^2.0.2"
+  }
+}
